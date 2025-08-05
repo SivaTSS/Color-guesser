@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+main {
+  flex: 1;
+  padding: 1rem;
+}
+.hidden {
+  display: none;
+}
+#configForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 300px;
+}
+.palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.palette .color {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+.board {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.row .peg {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #999;
+  cursor: pointer;
+}
+.feedback {
+  display: flex;
+  gap: 4px;
+  margin-left: 0.5rem;
+}
+.feedback .mark {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #333;
+}
+.feedback .black {
+  background: black;
+}
+.feedback .white {
+  background: white;
+}
+.message {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.color-picker {
+  position: absolute;
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  background: #fff;
+  border: 1px solid #333;
+  padding: 4px;
+  z-index: 10;
+}
+.color-picker .color {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #333;
+  cursor: pointer;
+}

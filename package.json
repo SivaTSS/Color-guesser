@@ -1,0 +1,10 @@
+{
+  "name": "color-guesser",
+  "version": "1.0.0",
+  "description": "Configurable Mastermind-style color guessing game",
+  "scripts": {
+    "start": "npx http-server . -c-1",
+    "test": "echo \"No tests specified\""
+  },
+  "license": "MIT"
+}

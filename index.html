@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mastermind Game</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Mastermind</h1>
+  </header>
+  <main>
+    <section id="config-section">
+      <form id="configForm">
+        <label>
+          Number of Pegs
+          <input type="number" id="numPegs" min="1" max="20" required />
+        </label>
+        <label>
+          Number of Colors
+          <input type="number" id="numColors" min="2" max="20" required />
+        </label>
+        <label>
+          <input type="checkbox" id="allowDuplicates" /> Allow Duplicates
+        </label>
+        <label>
+          Max Guesses
+          <input type="number" id="maxGuesses" min="1" value="10" required />
+        </label>
+        <button type="submit">Start Game</button>
+      </form>
+    </section>
+
+    <section id="game-section" class="hidden">
+      <div id="palette" class="palette"></div>
+      <div id="board" class="board"></div>
+      <div id="message" class="message"></div>
+      <button id="newGame">New Game</button>
+    </section>
+  </main>
+  <script src="js/script.js" type="module"></script>
+</body>
+</html>

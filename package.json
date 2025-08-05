@@ -4,8 +4,11 @@
   "description": "Configurable Mastermind-style color guessing game",
   "type": "module",
   "scripts": {
-    "start": "npx http-server . -c-1",
+    "start": "npx http-server . -c-1 -a localhost",
     "test": "node --test"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
 }
